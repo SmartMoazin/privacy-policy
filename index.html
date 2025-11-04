@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سياسة الخصوصية - المؤذن الذكي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,7 +15,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans Arabic', sans-serif;
+            font-family: 'Alexandria', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans Arabic', sans-serif;
             line-height: 1.8;
             color: #333;
             background-color: #f8f9fa;
@@ -46,11 +49,11 @@
         }
 
         .last-updated {
-            background: white;
+            background: #FBF8F0;
             padding: 15px 25px;
             margin: -20px auto 30px;
             max-width: 900px;
-            border-radius: 8px;
+            border-radius: 36px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             text-align: center;
             color: #666;
@@ -58,10 +61,10 @@
         }
 
         .section {
-            background: white;
+            background: #FBF8F0;
             margin-bottom: 25px;
             padding: 30px;
-            border-radius: 8px;
+            border-radius: 36px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.08);
             transition: box-shadow 0.3s ease;
         }
@@ -75,7 +78,7 @@
             font-size: 1.6rem;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #e9ecef;
+            border-bottom: 2px solid #e0d3a5;
             display: flex;
             align-items: center;
         }
@@ -140,10 +143,10 @@
         }
 
         .contact-section {
-            background: linear-gradient(135deg, #fdf9f0 0%, #f5f0e0 100%);
-            border: 2px solid #e0d3a5;
-            padding: 25px;
-            border-radius: 8px;
+            background: #FBF8F0;
+            border: 1px solid #e0d3a5;
+            padding: 30px;
+            border-radius: 36px;
             text-align: center;
             margin-top: 20px;
         }
@@ -152,12 +155,16 @@
             color: #B8860B;
             margin-bottom: 15px;
         }
+        
+        .contact-section p {
+            text-align: center;
+        }
 
         .contact-email {
             display: inline-block;
             background: #D4AF37;
             color: white;
-            padding: 12px 20px;
+            padding: 12px 30px;
             border-radius: 25px;
             text-decoration: none;
             font-size: 1.1rem;
@@ -165,10 +172,6 @@
             transition: all 0.3s ease;
             font-weight: 600;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            max-width: 280px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         .contact-email:hover {
@@ -178,9 +181,9 @@
         }
 
         .toc {
-            background: white;
+            background: #FBF8F0;
             padding: 25px;
-            border-radius: 8px;
+            border-radius: 36px;
             margin-bottom: 30px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.08);
         }
@@ -204,6 +207,7 @@
             transition: all 0.3s ease;
             cursor: pointer;
             color: #555;
+            border-radius: 12px;
         }
 
         .toc ul li::before {
@@ -211,7 +215,7 @@
         }
 
         .toc ul li:hover {
-            background: #fdf9f0;
+            background: #fff;
             border-right-color: #D4AF37;
             padding-right: 25px;
         }
@@ -236,8 +240,9 @@
                 font-size: 1rem;
             }
             
-            .section {
+            .section, .toc, .last-updated, .contact-section {
                 padding: 20px;
+                border-radius: 28px;
             }
             
             h2 {
@@ -256,9 +261,8 @@
             }
 
             .contact-email {
-                padding: 12px 16px;
+                padding: 12px 25px;
                 font-size: 1rem;
-                max-width: 240px;
             }
         }
 
@@ -288,10 +292,9 @@
                 <li onclick="scrollToSection('section1')">1. المعلومات التي نقوم بجمعها</li>
                 <li onclick="scrollToSection('section3')">2. استخدام البيانات</li>
                 <li onclick="scrollToSection('section4')">3. مشاركة البيانات مع أطراف ثالثة</li>
-                <li onclick="scrollToSection('section5')">4. حماية البيانات</li>
-                <li onclick="scrollToSection('section6')">5. حقوق المستخدم</li>
-                <li onclick="scrollToSection('section7')">6. التغييرات على سياسة الخصوصية</li>
-                <li onclick="scrollToSection('section8')">7. الاتصال بنا</li>
+                <li onclick="scrollToSection('section6')">4. حقوق المستخدم</li>
+                <li onclick="scrollToSection('section7')">5. التغييرات على سياسة الخصوصية</li>
+                <li onclick="scrollToSection('section8')">6. الاتصال بنا</li>
             </ul>
         </div>
 
@@ -318,8 +321,6 @@
             <p><strong>جميع هذه البيانات عامة وغير مرتبطة بهويتك الشخصية، ولا يمكن استخدامها لتحديد هويتك شخصيًا.</strong></p>
         </div>
 
-        <!-- القسم 2 (الاشتراكات والإعلانات) تم حذفه بالكامل -->
-
         <div class="section fade-in" id="section3">
             <h2><span class="number">2</span> استخدام البيانات</h2>
             <p>نستخدم البيانات التي يتم جمعها تلقائيًا لأغراض محددة فقط، تشمل:</p>
@@ -345,24 +346,11 @@
             <p>نضمن أن أي طرف ثالث يتعامل مع بيانات التطبيق يلتزم بنفس معايير الخصوصية والأمان المعمول بها لدينا.</p>
         </div>
 
-        <div class="section fade-in" id="section5">
-            <h2><span class="number">4</span> حماية البيانات</h2>
-            <p>نحرص على استخدام أحدث الأساليب والتقنيات لحماية بيانات المستخدمين من أي اختراق أو وصول غير مصرح به، وتشمل:</p>
-            <ul>
-                <li>تقنيات تشفير متقدمة لضمان أمان البيانات أثناء النقل والتخزين</li>
-                <li>إجراءات أمنية صارمة لمنع الوصول غير المصرح به إلى أي بيانات</li>
-                <li>مراجعات دورية للسياسات والإجراءات لضمان التوافق مع أفضل معايير الأمان الدولية</li>
-                <li>تدريب مستمر للفريق المسؤول على حماية البيانات والالتزام بسياسات الخصوصية</li>
-            </ul>
-            <p><strong>هدفنا هو الحفاظ على سلامة بياناتك وتأمين تجربة استخدام آمنة لك.</strong></p>
-        </div>
-
         <div class="section fade-in" id="section6">
-            <h2><span class="number">5</span> حقوق المستخدم</h2>
+            <h2><span class="number">4</span> حقوق المستخدم</h2>
             <p>كمستخدم لتطبيقنا، لديك حقوق واضحة وموثقة تشمل:</p>
             <ul>
                 <li>معرفة ما هي المعلومات التي يتم جمعها عنك، حتى لو كانت غير شخصية</li>
-                <li>التحكم في الإشعارات من خلال إعدادات جهازك أو التطبيق</li>
                 <li>التوقف عن استخدام التطبيق وحذف أي بيانات مرتبطة باستخدامك (حتى لو كانت غير شخصية)</li>
             </ul>
             <div class="highlight-box">
@@ -371,24 +359,22 @@
         </div>
 
         <div class="section fade-in" id="section7">
-            <h2><span class="number">6</span> التغييرات على سياسة الخصوصية</h2>
+            <h2><span class="number">5</span> التغييرات على سياسة الخصوصية</h2>
             <p>قد يتم تحديث سياسة الخصوصية من وقت لآخر:</p>
             <ul>
                 <li>لتعكس التغييرات في ميزات التطبيق أو طريقة جمع البيانات</li>
-                <li>للامتثال للقوانين والتشريعات الجديدة المتعلقة بالخصوصية وحماية البيانات</li>
             </ul>
-            <p>سيتم إعلام المستخدمين بأي تغييرات من خلال تحديثات التطبيق، ونوصي دائمًا بمراجعة هذه الصفحة بشكل دوري للاطلاع على آخر التحديثات.</p>
         </div>
 
         <div class="section fade-in" id="section8">
-            <h2><span class="number">7</span> الاتصال بنا</h2>
+            <h2><span class="number">6</span> الاتصال بنا</h2>
             <p>إذا كان لديك أي أسئلة، شكوى، أو استفسار حول سياسة الخصوصية، يمكنك التواصل معنا.</p>
             
             <div class="contact-section">
                 <h3>📧 تواصل معنا</h3>
                 <p>نحن ملتزمون بالرد على جميع الاستفسارات بشكل شفاف وواضح</p>
                 <a href="mailto:SmartMoazin.feedback@outlook.com" class="contact-email">
-                    SmartMoazin.feedback@outlook.com
+                    تواصل
                 </a>
             </div>
             
@@ -403,7 +389,6 @@
     </footer>
 
     <script>
-
         function scrollToSection(sectionId) {
             const element = document.getElementById(sectionId);
             if (element) {
@@ -413,27 +398,6 @@
             }
         }
 
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(20px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(section);
-        });
-
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('.section[id]');
             const tocItems = document.querySelectorAll('.toc ul li');
@@ -441,20 +405,23 @@
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
                 if (pageYOffset >= sectionTop - 200) {
                     current = section.getAttribute('id');
                 }
             });
 
             tocItems.forEach((item, index) => {
-                item.style.background = '';
+                const sectionMap = ['section1', 'section3', 'section4', 'section6', 'section7', 'section8'];
+                const targetId = sectionMap[index];
+                
+                item.style.background = 'transparent';
                 item.style.borderRightColor = 'transparent';
-                // مراجعة رقم القسم حسب الجدول الجديد بعد الحذف
-                const sectionMap = ['section1', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8'];
-                if (current === sectionMap[index]) {
-                    item.style.background = '#fdf9f0';
+                item.style.paddingRight = '15px';
+                
+                if (current === targetId) {
+                    item.style.background = '#fff';
                     item.style.borderRightColor = '#D4AF37';
+                    item.style.paddingRight = '25px';
                 }
             });
         });
